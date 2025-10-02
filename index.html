@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drawer Component</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body>
+    <div class="dashboard">
+        <button>Open Drawer</button>
+    </div>
+
+    <form class="drawer" role="dialog" aria-modal="true" aria-labelledby="drawer-title">
+        <div class="top-drawer-container">
+            <div class="blue-container">
+                <div class="new-project-and-close-container">
+                    <h1 id="drawer-title">New Project</h1>
+                    <span class="material-symbols-outlined">close</span>
+                </div>
+
+                <div class="get-started-container">
+                    <p>Get started by filling in the information below to create your new project.</p>
+                </div>
+            </div>
+
+            <div class="input-groups-container">
+                <div class="input-group">
+                    <label for="projectname">Project name</label>
+                    <input type="text" name="projectname" id="projectname">
+                </div>
+
+                <div class="input-group">
+                    <label for="description">Description</label>
+                    <textarea name="description" id="description"></textarea>
+                </div>
+            </div>
+
+            <div class="teams-and-privacy-container">
+                <div class="teams-container">
+                    <div class="teams-title-container">
+                        <p>Team Members</p>
+                    </div>
+
+                    <div class="avatars-container">
+                        <div class="avatar">#</div>
+                        <div class="avatar">#</div>
+                        <div class="avatar">#</div>
+                        <div class="avatar">#</div>
+                        <div class="avatar">#</div>
+                        <div class="avatar-icon">#</div>
+                    </div>
+                </div>
+
+                <div class="privacy-container">
+                    <div class="privacy-title">
+                        <p>Privacy</p>
+                    </div>
+
+                    <div class="radio-input-group">
+                        <input type="radio" name="privacy" id="public" value="public_access">
+                        <label for="public">Public access</label>
+                        <p>Everyone with the link will see this project</p>
+                    </div>
+
+                    <div class="radio-input-group">
+                        <input type="radio" name="privacy" id="project_members" value="project_members">
+                        <label for="project_members">Private to project members</label>
+                        <p>Only members of this project will be able to access</p>
+                    </div>
+
+                    <div class="radio-input-group">
+                        <input type="radio" name="privacy" id="you" value="you">
+                        <label for="you">Private to you</label>
+                        <p>You are the only one able to access this project</p>
+                    </div>
+                </div>
+
+                <div class="share-container">
+                    <div class="copy-link-container">
+                        <span class="material-symbols-outlined">link</span>
+                        <a href="#">Copy link</a>
+                    </div>
+
+                    <div class="learn-more-container">
+                        <span class="material-symbols-outlined">help</span>
+                        <p>Learn more about sharing</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom-drawer-container">
+            <div class="buttons-container">
+                <button>Cancel</button>
+                <button>Save</button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
